@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Centered text */
+/* Centered text section 1 */
 .centered {
   position: absolute;
   top: 50%;
