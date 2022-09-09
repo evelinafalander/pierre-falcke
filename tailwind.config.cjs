@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        h1: "#3F342D",
-        main_color: "#E6E3D7",
+        brun: "#3F342D",
+        beige: "#E6E3D7",
       },
     },
   },
