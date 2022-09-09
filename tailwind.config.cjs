@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         brun: "#3F342D",
         beige: "#E6E3D7",
+        gul: "#F9B34F"
       },
     },
   },
