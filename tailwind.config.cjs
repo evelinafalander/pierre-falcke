@@ -3,8 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        Parafont: "Nunito Sans', sans-serif",
+      colors: {
+        h1: "#3F342D",
+        main_color: "#E6E3D7",
       },
     },
   },
