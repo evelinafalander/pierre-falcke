@@ -22,3 +22,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.container {
+  position: relative;
+}
+.low {
+  position: absolute;
+  top: 81%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
