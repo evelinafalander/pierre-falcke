@@ -14,9 +14,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.typekit.net/iei0xqi.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            cursor: {
+              mincursor: "url(cursor.svg) 25 25, pointer",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body
-    class="[&_h2]:text-beige [&_p]:mx-44 [&_p]:px-72 [&_li]:mx-44 [&_li]:px-72"
+    class="cursor-mincursor [&_h2]:text-beige [&_p]:mx-44 [&_p]:px-72 [&_li]:mx-44 [&_li]:px-72"
   >
     <div class="bg-brun">
       <!-- section 1-->
