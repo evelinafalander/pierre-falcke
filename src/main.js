@@ -11,3 +11,17 @@ inView(".fotogalleryinview", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+
+/*----Sektion 5-----*/
+inView( ".h3inview" , () =>{
+  animate( ".h3inview", { y: [-30, 0 ] }, { duration: 1} )
+})
+
+const items = document.querySelectorAll("#horisontalliste li");
+scroll(
+   animate("#horisontalliste", {
+     transform: ["none", `translateX(-${items.length - 1}00vw)`]
+   }),
+   { target: document.querySelector("#horisontalscrollsection") }
+ ); 
+/*------sektion 5 slut------*/

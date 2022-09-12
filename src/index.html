@@ -19,6 +19,7 @@
   <body
     class="cursor-mincursor [&_h2]:text-beige [&_p]:mx-44 [&_p]:px-72 [&_li]:mx-44 [&_li]:px-72"
   >
+  <main class="container mx-auto overflow-clip">
     <div class="bg-brun">
       <!-- section 1-->
       <section>
@@ -118,7 +119,7 @@
           “Om ganske få år er hele branchen digital, og dem der ikke hopper med
           på den digitale vogn, lukker.”
         </h3>
-        <p class="text-beige">
+        <p class="text-beige mb-52">
           Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende
           stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i
           Ishøj industri, fik fløjet billige skuespillere ind fra Polen og
@@ -127,13 +128,14 @@
           bedst sælgende stock-fotografer, før han blev færdig med studiet på
           DMJX.
         </p>
+        <h2 class="text-center text-4xl font-bold">En skillevej</h2>
       </section>
     </div>
     <div class="bg-beige">
       <!-- section 5-->
       <section>
-        <h2>En skillevej</h2>
-        <p>
+        <h3 class="text-brun text-center text-4xl font-bold -scale-x-100 rotate-180 h3inview mb-52">En skillevej</h3>
+        <p class="leading-loose mb-52">
           Pierre tjente godt det følgende årti. Men stille og roligt begyndte
           billederne også at give ham kvalme. Han kunne ikke holde sit eget
           arbejde ud, og måtte finde et modsvar til alle de blankpolerede fotos.
@@ -144,23 +146,27 @@
           <img src="img/enskillevej1.webp" alt="img1" />
           <img src="img/enskillevej2.webp" alt="img2" />
         </div>
-        <p>
+        <p class="leading-loose">
           Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
           Glitch art og polaroid fotografering, og begyndte stille og roligt at
           skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der
           er et uforudsigeligt element i det at tage billeder.
         </p>
-        <p>
+        <p class="leading-loose">
           Pierre tog det endda så vidt at han ikke kun droppede at tage
           stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han
           solgte sine fotos hos. Han gik fra at være en god forretningsdrivende
           til at blive en vaskeægte boheme-type på rekordtid.
         </p>
-        <img src="img/slide1.webp" alt="slide1" />
-        <img src="img/silde2.webp" alt="slide2" />
-        <img src="img/slide3.webp" alt="slide3" />
-        <img src="img/slide4.webp" alt="slide4" />
-        <img src="img/slide5.webp" alt="slide5" />
+        <section id="horisontalscrollsection" class="h-[500vh] relative">
+        <ul id="horisontalliste" class="list-none flex sticky top-0">
+          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><img class="w-[600px] h-[400px]" src="img/slide1.webp" alt="foto"></li>
+          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><img class="w-[600px] h-[400px]" src="img/slide2.webp" alt="foto"></li>
+          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><img class="w-[600px] h-[400px]" src="img/slide3.webp" alt="foto"></li>
+          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><img class="w-[600px] h-[400px]" src="img/slide4.webp" alt="foto"></li>
+          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto"><img class="w-[600px] h-[400px]" src="img/slide5.webp" alt="foto"></li>
+          </ul>
+        </section>
       </section>
 
       <!-- section 6-->
@@ -228,5 +234,6 @@
     </div>
 
     <script type="module" src="./main.js"></script>
+  </main>
   </body>
 </html>
