@@ -14,8 +14,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.typekit.net/iei0xqi.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            cursor: {
+              mincursor: "url(cursor.svg) 25 25, pointer",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body class="[&_h2]:text-beige [&_p]:mx-44 [&_p]:px-72">
+  <body
+    class="cursor-mincursor [&_h2]:text-beige [&_p]:mx-44 [&_p]:px-72 [&_li]:mx-44 [&_li]:px-72"
+  >
     <div class="bg-brun">
       <!-- section 1-->
       <section>
@@ -33,33 +46,39 @@
 
       <!-- section 2-->
       <section>
-        <h2 class="h-screen w-screen text-center text-4xl font-bold">
-          Pierre Falcke
-        </h2>
+        <div class="grid h-screen w-screen place-content-center">
+          <h2 class="text-4xl font-bold">Pierre Falcke</h2>
+        </div>
 
         <div class="container min-w-fit">
           <img src="img/pierre.webp" alt="hero_img" class="h-screen w-screen" />
-          <h3 class="low text-3xl font-extrabold text-beige">
+          <h3 class="low text-3xl font-extrabold text-gul">
             Du ved formentligt ikke hvem han er
           </h3>
         </div>
-        <p class="font-parafont">
-          Men indtil for kort tid siden, så du hans værker et par gange om
-          dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst
-          sælgende stock-fotografer, og han solgte over 2 millioner fotos om
-          året. Men Pierre kunne ikke drømme om at bruge sine egne fotos -
-          faktisk kan han ikke fordrage sit eget arbejde.
-        </p>
-        <h3>Pierre sælger 2 millioner fotos om året.</h3>
-        <h3>Det svarer til én fotolicens hvert 16. sekund.</h3>
-        <h3>Du ser hans fotos ca. 2 gange om dagen.</h3>
+        <div class="grid h-screen w-screen place-content-center gap-24">
+          <p class="font-parafont text-beige">
+            Men indtil for kort tid siden, så du hans værker et par gange om
+            dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst
+            sælgende stock-fotografer, og han solgte over 2 millioner fotos om
+            året. Men Pierre kunne ikke drømme om at bruge sine egne fotos -
+            faktisk kan han ikke fordrage sit eget arbejde.
+          </p>
+          <ul
+            class="fotogalleryinview text-center text-2xl font-semibold text-gul"
+          >
+            <li>Pierre sælger 2 millioner fotos om året.</li>
+            <li>Det svarer til én fotolicens hvert 16. sekund.</li>
+            <li>Du ser hans fotos ca. 2 gange om dagen.</li>
+          </ul>
+        </div>
       </section>
 
       <!-- section 3-->
       <section>
         
-        <div class=" h-screen w-screen">
-        <h3 class=" text-gul text-3xl border-2 border-solid border-gul">Hvad er stock-fotos?</h3>
+        <div class=" grid place-content-center h-screen w-screen">
+        <h3 class=" top-1/2 text-gul text-3xl inline-block border-2 border-solid border-gul">Hvad er stock-fotos?</h3>
       </div>
         <img src="img/stockimg.webp" alt="stock-img" />
         <p>
@@ -84,16 +103,18 @@
 
       <!-- section 4-->
       <section>
-        <h2 class="w-screen h-screen text-center text-4xl font-bold">Pierres berømmelse</h2>
-        <p class="text-beige max-w-prose">
+        <div class="grid place-content-center w-screen h-screen">
+        <h2 class="text-center text-4xl font-bold">Pierres berømmelse</h2>
+      </div>
+        <p class="text-beige mb-36 leading-loose">
           Pierres interesse for foto startede som ganske ung - som 10-årig fik
           han sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var
           før den digitale revolution, så alle Pierres lommepenge blev brugt på
           filmruller og fremkaldelse af film. Pierre fortsatte med at
           fotografere på film op gennem gymnasietiden.
         </p>
-        <img src="img/pierre-2.webp" alt="pierre-2" />
-        <p>
+        <img src="img/pierre-2.webp" alt="pierre-2" class= "px-32" />
+        <p class="text-beige mt-32">
           Pierre over til digital fotografering i starten af 2000’erne, da han
           begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en
           ny verden sig: Reklamefotografering i studie, lyssætning og
@@ -103,11 +124,11 @@
           de store, etablerede spillere på markedet holdt lidt igen. Pierre så
           det for sig:
         </p>
-        <h3>
+        <h3 class="text-beige mt-32 mb-32 text-center text-lg italic">
           “Om ganske få år er hele branchen digital, og dem der ikke hopper med
           på den digitale vogn, lukker.”
         </h3>
-        <p>
+        <p class="text-beige">
           Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende
           stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i
           Ishøj industri, fik fløjet billige skuespillere ind fra Polen og
