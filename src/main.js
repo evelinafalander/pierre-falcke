@@ -11,3 +11,12 @@ inView(".fotogalleryinview", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+
+document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+  scroll(animate(elementderskalparallaxes, { y: [100, 1000] }), {
+    target: elementderskalparallaxes
+  });
+});
+
+
