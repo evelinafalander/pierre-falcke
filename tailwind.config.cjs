@@ -3,10 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      cursor: {
+        mincursor: "url(kamera1.png) 25 25, pointer",
+      },
       colors: {
         brun: "#3F342D",
         beige: "#E6E3D7",
-        gul: "#F9B34F"
+        gul: "#F9B34F",
       },
     },
   },
