@@ -25,3 +25,11 @@ scroll(
    { target: document.querySelector("#horisontalscrollsection") }
  ); 
 /*------sektion 5 slut------*/
+document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+  const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+  scroll(animate(elementderskalparallaxes, { y: [100, 1000] }), {
+    target: elementderskalparallaxes
+  });
+});
+
+
