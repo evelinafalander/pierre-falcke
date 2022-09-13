@@ -25,7 +25,7 @@ scroll(
 /*------sektion 5 slut------*/
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
-  scroll(animate(elementderskalparallaxes, { y: [100, 1000] }), {
+  scroll(animate(elementderskalparallaxes, { y: [10, 500] }), {
     target: elementderskalparallaxes,
   });
 });

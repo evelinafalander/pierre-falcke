@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/iei0xqi.css" />
   </head>
   <body
-    class="cursor-mincursor"
+    class="cursor-mincursor active:cursor-mincurserclik"
 
   >
   <main class="overflow-clip">
@@ -74,7 +74,7 @@
         <div class="grid h-screen snap-x snap-mandatory place-content-center">
           <a
             href="#section3"
-            class="inline-block animate-pulse snap-mandatory snap-center text-3xl text-gul"
+            class="inline-block animate-pulse snap-mandatory snap-center text-3xl text-gul hover:cursor-mincursor active:cursor-mincurserclik"
           >
             Læs mere om stock-fotos!</a
           >
@@ -87,8 +87,8 @@
           <img  src="img/stockimg.webp" alt="stockimg">
         </div>
         <div class="grid grid-cols-4 ">
-          <div class="parallaxcontainer h-screen">
-            <p>
+          <div class="parallaxcontainer h-screen col-start-2 col col-end-4">
+            <p class="bg-beige p-5">
               Stock-fotos er billeder, der kan købes fra et foto-website. De
               bruges af aviser, til markedsføring og som indhold på websites. En
               licens til at bruge et foto koster typisk mellem 10 og 100 kroner,
@@ -96,8 +96,8 @@
             </p>
           </div>
 
-          <div class="parallaxcontainer h-screen">
-            <p class="bg-beige opacity-60">
+          <div class="parallaxcontainer h-screen col-start-2 col col-end-4">
+            <p class="bg-beige p-5">
               Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er
               de der billeder af en læge i hvid kittel med stetoskop om halsen
               på en meget hvid baggrund eller en meget glad dame fra
@@ -105,8 +105,8 @@
             </p>
           </div>
 
-          <div class="parallaxcontainer h-screen">
-            <p>
+          <div class="parallaxcontainer h-screen col-start-2 col col-end-4">
+            <p class="bg-beige p-5">
               Stock-fotos har eksisteret i mange år. Før branchen blev digital,
               tilbød stock-foto virksomhederne billedmapper, der kunne bestilles
               fra. Men stock-foto branchen var én af de tidlige til at blive
@@ -370,5 +370,13 @@
 
       <script type="module" src="./main.js"></script>
     </main>
+    <footer class="bg-gul text-brun">
+      <div class="py-7 flex place-content-center">
+        <p class="pr-3">
+          Student project by Ida, Mathea & Evelina  
+        </p>
+        <p class="border-l-2 pl-3 border-brun">Multimedia design at kea 2022</p>
+      </div>
+    </footer>
   </body>
 </html>
