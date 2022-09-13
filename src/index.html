@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/iei0xqi.css" />
   </head>
   <body
-    class="cursor-mincursor [&_h2]:text-beige"
+    class="cursor-mincursor"
   >
   <main class="overflow-clip">
-    <div class="bg-brun">
+    <div class="bg-brun [&_h2]:text-beige">
       <!-- section 1-->
       <section>
         <div class="container min-w-fit">
@@ -78,10 +78,10 @@
         <!-- section 3-->
         <section
           id="section3"
-          class="h-screen bg-scroll"
+          class="h-screen grid grid-cols-4"
           style="background-image: url(img/stockimg.webp)"
         >
-          <div class="parallaxcontainer col-start-2 col-end-4">
+          <div class="parallaxcontainer col-start-2 col-end-4 grid-rows-3">
             <p>
               Stock-fotos er billeder, der kan købes fra et foto-website. De
               bruges af aviser, til markedsføring og som indhold på websites. En
@@ -148,14 +148,15 @@
           <h2 class="text-center text-4xl font-bold">En skillevej</h2>
         </section>
       </div>
-      <div class="bg-beige">
+
+      <div class="bg-beige [&_h2]:text-brun">
         <!-- section 5-->
         <section>
-          <h3
-            class="h3inview mb-52 rotate-180 -scale-x-100 text-center text-4xl font-bold text-brun"
+          <h2
+            class="h3inview mb-52 rotate-180 -scale-x-100 text-center text-4xl font-bold"
           >
             En skillevej
-          </h3>
+          </h2>
           <p class="mb-52 leading-loose">
             Pierre tjente godt det følgende årti. Men stille og roligt begyndte
             billederne også at give ham kvalme. Han kunne ikke holde sit eget
@@ -301,7 +302,15 @@
         </section>
 
         <!-- section 7-->
-        <section></section>
+        
+        <section>
+          <div class="grid place-content-center h-screen ">
+          <h2 class="text-brun text-4xl font-bold">En ny begyndelse</h2>
+        </div>
+          <video autoplay muted loop>
+            <source src="video14sec.mp4"  type="video/mp4">
+          </video>
+        </section>
       </div>
 
       <script type="module" src="./main.js"></script>

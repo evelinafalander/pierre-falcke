@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       cursor: {
-        mincursor: "url(kamera1.png) 25 25, pointer",
+        mincursor: "url(test2.svg) 25 25, pointer",
       },
       colors: {
         brun: "#3F342D",
