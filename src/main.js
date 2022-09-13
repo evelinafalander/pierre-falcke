@@ -13,21 +13,28 @@ inView(".fotogalleryinview", ({ target }) => {
 });
 
 /*----Sektion 5-----*/
+<<<<<<< HEAD
+=======
+inView(".h3inview", () => {
+  animate(".h3inview", { y: [-30, 0] }, { duration: 1 });
+});
+>>>>>>> origin/ida-tekst
 
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
-   animate("#horisontalliste", {
-     transform: ["none", `translateX(-${items.length - 1}00vw)`]
-   }),
-   { target: document.querySelector("#horisontalscrollsection") }
- ); 
+  animate("#horisontalliste", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horisontalscrollsection") }
+);
 /*------sektion 5 slut------*/
-document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
   scroll(animate(elementderskalparallaxes, { y: [100, 1000] }), {
-    target: elementderskalparallaxes
+    target: elementderskalparallaxes,
   });
 });
+<<<<<<< HEAD
 
 scroll(
   animate(".scrollzoomimg", { 
@@ -47,3 +54,5 @@ scroll(
     offset: ["1 1", "0.5 0.5"]
  }
 )
+=======
+>>>>>>> origin/ida-tekst

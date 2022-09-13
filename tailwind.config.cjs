@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       cursor: {
         mincursor: "url(kamera.svg) 25 25, pointer",
+        mincurserclik: "url(kamera_blitz.svg) 25 25, pointer",
       },
       colors: {
         brun: "#3F342D",
