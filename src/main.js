@@ -13,12 +13,7 @@ inView(".fotogalleryinview", ({ target }) => {
 });
 
 /*----Sektion 5-----*/
-<<<<<<< HEAD
-=======
-inView(".h3inview", () => {
-  animate(".h3inview", { y: [-30, 0] }, { duration: 1 });
-});
->>>>>>> origin/ida-tekst
+
 
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
@@ -34,7 +29,6 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes,
   });
 });
-<<<<<<< HEAD
 
 scroll(
   animate(".scrollzoomimg", { 
@@ -54,5 +48,3 @@ scroll(
     offset: ["1 1", "0.5 0.5"]
  }
 )
-=======
->>>>>>> origin/ida-tekst
