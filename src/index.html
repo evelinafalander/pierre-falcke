@@ -21,7 +21,8 @@
   >
   <main class="overflow-clip">
     <div class="bg-brun [&_h2]:text-beige"
-    style="background-image: url(img/background.webp);"
+    style="background-image: url(img/background-50.png);
+    background-size: cover;"
     >
       <!-- section 1-->
       <section>
@@ -73,7 +74,7 @@
         <div class="grid h-screen snap-x snap-mandatory place-content-center">
           <a
             href="#section3"
-            class="inline-block animate-pulse snap-mandatory snap-center border-2 border-solid border-gul p-3 text-3xl text-gul"
+            class="inline-block animate-pulse snap-mandatory snap-center text-3xl text-gul"
           >
             Læs mere om stock-fotos!</a
           >
@@ -81,10 +82,12 @@
         <!-- section 3-->
         <section
           id="section3"
-          class="h-screen grid grid-cols-4"
-          style="background-image: url(img/stockimg.webp)"
         >
-          <div class="parallaxcontainer col-start-2 col-end-4 grid-rows-3">
+        <div class=" sticky top-0 h-screen" >
+          <img  src="img/stockimg.webp" alt="stockimg">
+        </div>
+        <div class="grid grid-cols-4 ">
+          <div class="parallaxcontainer h-screen">
             <p>
               Stock-fotos er billeder, der kan købes fra et foto-website. De
               bruges af aviser, til markedsføring og som indhold på websites. En
@@ -93,7 +96,7 @@
             </p>
           </div>
 
-          <div class="parallaxcontainer col-start-2 col-end-4 px-20">
+          <div class="parallaxcontainer h-screen">
             <p class="bg-beige opacity-60">
               Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er
               de der billeder af en læge i hvid kittel med stetoskop om halsen
@@ -102,7 +105,7 @@
             </p>
           </div>
 
-          <div class="parallaxcontainer col-start-2 col-end-4">
+          <div class="parallaxcontainer h-screen">
             <p>
               Stock-fotos har eksisteret i mange år. Før branchen blev digital,
               tilbød stock-foto virksomhederne billedmapper, der kunne bestilles
@@ -110,6 +113,7 @@
               fuldt digitaliseret.
             </p>
           </div>
+        </div>
         </section>
 
         <!-- section 4-->
@@ -152,7 +156,9 @@
         </section>
       </div>
 
-      <div class="bg-beige [&_h2]:text-brun">
+      <div class="bg-beige [&_h2]:text-brun"
+      style="background-image: url(img/background-50.png);
+    background-size: cover;">
         <!-- section 5-->
         <section>
           <h2
