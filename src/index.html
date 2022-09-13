@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/iei0xqi.css" />
   </head>
   <body
-    class="cursor-mincursor active:cursor-mincurserclik"
+    class="cursor-mincursor active:cursor-mincurserclik [&_p]:text-lg"
 
   >
   <main class="overflow-clip">
@@ -54,20 +54,22 @@
               Du ved formentligt ikke hvem han er
             </h3>
           </div>
-          <div class="grid h-screen w-screen place-content-center gap-24">
-            <p class="font-parafont text-beige">
+          <div>
+            <div class="grid grid-cols-4 h-screen place-content-center">
+             <p class="text-beige col-start-2 col-end-4">
               Men indtil for kort tid siden, så du hans værker et par gange om
               dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst
               sælgende stock-fotografer, og han solgte over 2 millioner fotos om
               året. Men Pierre kunne ikke drømme om at bruge sine egne fotos -
               faktisk kan han ikke fordrage sit eget arbejde.
-            </p>
+             </p>
+            </div>
             <ul
               class="fotogalleryinview text-center text-2xl font-semibold text-gul"
             >
-              <li>Pierre sælger 2 millioner fotos om året.</li>
-              <li>Det svarer til én fotolicens hvert 16. sekund.</li>
-              <li>Du ser hans fotos ca. 2 gange om dagen.</li>
+              <li class="py-7">Pierre sælger 2 millioner fotos om året.</li>
+              <li class="py-7">Det svarer til én fotolicens hvert 16. sekund.</li>
+              <li class="py-7">Du ser hans fotos ca. 2 gange om dagen.</li>
             </ul>
           </div>
         </section>
@@ -365,7 +367,8 @@
           <video autoplay muted loop class="sticky top-0">
             <source class="h-screen w-screen" src="video14sec.mp4" type="video/mp4" />
           </video>
-<div class="sticky top-0 h-screen">
+          <div class="grid grid-cols-4 text-beige">
+<div class="sticky top-0 h-screen col-start-2 col-end-4">
   <p>
     Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig 
     lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. 
@@ -376,7 +379,7 @@
 
   </p>
 </div>
-<div class="sticky top-0 h-screen">
+<div class="sticky top-0 h-screen col-start-2 col-end-4">
   <p>
     Karrieren begynder også så småt også at gå den 
     rette vej: Pierre er begyndt at sælge fotokunst på nettet, 
@@ -387,11 +390,12 @@
 
   </p>
 </div>
-<div class="sticky top-0 h-screen">
+<div class="sticky top-0 h-screen col-start-2 col-end-4">
   <p>
     Som Pierre forklarer det:
   </p>
   <q>“Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri. Jeg føler mig genfødt.”</q>
+</div>
 </div>
 
         </section>
@@ -399,6 +403,7 @@
 
       <script type="module" src="./main.js"></script>
     </main>
+
     <footer class="bg-gul text-brun">
       <div class="py-7 flex place-content-center">
         <p class="pr-3">

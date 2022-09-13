@@ -4,13 +4,33 @@ import { animate, stagger, inView, scroll, timeline } from "motion";
 
 animate("h1", { opacity: [0, 1] }, { duration: 5 });
 
+//section2 
+
+//animate li 1
 inView(".fotogalleryinview", ({ target }) => {
   animate(
-    target.querySelectorAll("li"),
-    { x: [-2000, 0] },
-    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+    target.querySelectorAll("li:nth-child(1)"),
+    { x: [-2000, -300] },
+    { duration: 2, delay: 0.5 }
   );
 });
+//animate li 2
+inView(".fotogalleryinview", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(2)"),
+    { x: [-2000, 0] },
+    { duration: 2, delay: 2 }
+  );
+});
+//animate li 3
+inView(".fotogalleryinview", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(3)"),
+    { x: [-2000, 300] },
+    { duration: 2, delay: 3.5 }
+  );
+});
+
 
 /*----Sektion 5-----*/
 
