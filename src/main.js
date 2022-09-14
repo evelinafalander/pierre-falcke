@@ -19,7 +19,7 @@ inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(2)"),
     { x: [-2000, 0] },
-    { duration: 2, delay: 2 }
+    { duration: 2, delay: 1 }
   );
 });
 //animate li 3
@@ -27,15 +27,30 @@ inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(3)"),
     { x: [-2000, 300] },
-    { duration: 2, delay: 3.5 }
+    { duration: 2, delay: 1.5 }
   );
 });
 //section 3
 
 animate(".myScale" ,
-   {scale: [1, 0.8, 1, 0.8, 1] }, 
-   {duration: 4, repeat: Infinity, animationTimingFunction: "linear", }
+   {scale: [1, 0.8, 1,] }, 
+   {duration: 3, repeat: Infinity, }
  )
+ 
+//play css animation when object in view
+
+const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('tracking-in-expand');
+    }
+  });
+});
+//select element to animate in view
+observer.observe(document.querySelector('.stockfoto'));
 
 
 
@@ -49,12 +64,16 @@ scroll(
   { target: document.querySelector("#horisontalscrollsection") }
 );
 /*------sektion 5 slut------*/
+
+//paralax
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
-  const elementderskalparallaxes = parallaxcontainer.querySelector("p");
+  const elementderskalparallaxes = parallaxcontainer.querySelector("p, h3");
   scroll(animate(elementderskalparallaxes, { y: [10, 500] }), {
     target: elementderskalparallaxes,
   });
 });
+
+//
 
 scroll(
   animate(".scrollzoomimg", {
@@ -80,7 +99,7 @@ scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
 scroll(
   animate(".scrollzoomimg3", { 
-    scale: [1, 1.4]    
+    scale: [0.5, 1.9]    
   }),
   { 
     target: document.querySelector(".scrollzoom3"),
@@ -88,3 +107,12 @@ scroll(
  }
 )
 
+scroll(
+  animate(".scrollzoomin4", { 
+    scale: [1, 1.4]    
+  }),
+  { 
+    target: document.querySelector(".scrollzoom4"),
+    offset: ["1 1", "0.1 0.1"]
+ }
+)
