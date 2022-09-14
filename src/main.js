@@ -48,3 +48,13 @@ scroll(
     offset: ["1 1", "0.5 0.5"]
  }
 )
+scroll(
+  animate(".scrollzoomimg3", { 
+    scale: [1, 1.4]    
+  }),
+  { 
+    target: document.querySelector(".scrollzoom3"),
+    offset: ["1 1", "0.5 0.5"]
+ }
+)
+
