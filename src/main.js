@@ -48,3 +48,16 @@ scroll(
   }
 );
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+   
+
+
+scroll(
+  animate(".scrollzoomimg3", { 
+    scale: [1, 1.4]    
+  }),
+  { 
+    target: document.querySelector(".scrollzoom3"),
+    offset: ["1 1", "0.5 0.5"]
+ }
+)
+
