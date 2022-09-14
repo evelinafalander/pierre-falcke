@@ -36,7 +36,7 @@ animate(".myScale" ,
    {scale: [1, 0.8, 1,] }, 
    {duration: 3, repeat: Infinity, }
  )
- 
+
 //play css animation when object in view
 
 const observer = new IntersectionObserver(entries => {
@@ -51,6 +51,21 @@ const observer = new IntersectionObserver(entries => {
 });
 //select element to animate in view
 observer.observe(document.querySelector('.stockfoto'));
+
+//en skillevej flip, animation: flipX target class: myFlip 
+
+const object = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('flipX');
+    }
+  });
+});
+//select element to animate in view
+object.observe(document.querySelector('.myFlip'));
 
 
 
