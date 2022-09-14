@@ -14,7 +14,6 @@ inView(".fotogalleryinview", ({ target }) => {
 
 /*----Sektion 5-----*/
 
-
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
   animate("#horisontalliste", {
@@ -31,20 +30,21 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
 });
 
 scroll(
-  animate(".scrollzoomimg", { 
-    scale: [1, 1.5]    
+  animate(".scrollzoomimg", {
+    scale: [1, 1.5],
   }),
-  { 
+  {
     target: document.querySelector(".scrollzoom"),
-    offset: ["0.25 0.25", "1 1"]
- }
-)
+    offset: ["0.25 0.25", "1 1"],
+  }
+);
 scroll(
-  animate(".scrollzoomimg2", { 
-    scale: [1, 1.7]    
+  animate(".scrollzoomimg2", {
+    scale: [1, 1.7],
   }),
-  { 
+  {
     target: document.querySelector(".scrollzoom2"),
-    offset: ["1 1", "0.5 0.5"]
- }
-)
+    offset: ["1 1", "0.5 0.5"],
+  }
+);
+scroll(animate(".progress-bar", { scaleX: [0, 1] }));
