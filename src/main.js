@@ -7,7 +7,7 @@ animate("h1", { opacity: [0, 1] }, { duration: 5 });
 //section2 
 
 //animate li 1
-inView(".fotogalleryinview", ({ target }) => {
+inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(1)"),
     { x: [-2000, -300] },
@@ -15,7 +15,7 @@ inView(".fotogalleryinview", ({ target }) => {
   );
 });
 //animate li 2
-inView(".fotogalleryinview", ({ target }) => {
+inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(2)"),
     { x: [-2000, 0] },
@@ -23,13 +23,20 @@ inView(".fotogalleryinview", ({ target }) => {
   );
 });
 //animate li 3
-inView(".fotogalleryinview", ({ target }) => {
+inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(3)"),
     { x: [-2000, 300] },
     { duration: 2, delay: 3.5 }
   );
 });
+//section 3
+
+animate(".myScale" ,
+   {scale: [1, 0.8, 1, 0.8, 1] }, 
+   {duration: 4, repeat: Infinity, animationTimingFunction: "linear", }
+ )
+
 
 
 /*----Sektion 5-----*/
