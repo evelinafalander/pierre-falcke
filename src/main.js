@@ -6,55 +6,6 @@ animate("h1", { opacity: [0, 1] }, { duration: 5 });
 
 //section2 
 
-//animate li 1
-inView(".inview", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(1)"),
-    { x: [-2000, -300] },
-    { duration: 1, delay: 0 }
-  );
-});
-//animate li 2
-inView(".inview", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(2)"),
-    { x: [-2000, 0] },
-    { duration: 1, delay: 0.5 }
-  );
-});
-//animate li 3
-inView(".inview", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(3)"),
-    { x: [-2000, 300] },
-    { duration: 1, delay: 1 }
-  );
-});
-// section 2 mobileview animation
-inView(".inviewMobile", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(1)"),
-    { x: [-2000, 300] },
-    { duration: 1, delay: 0 }
-  );
-});
-//animate li 2
-inView(".inviewMobile", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(2)"),
-    { x: [-2000, 300] },
-    { duration: 1, delay: 0.5 }
-  );
-});
-//animate li 3
-inView(".inviewMobile", ({ target }) => {
-  animate(
-    target.querySelectorAll("li:nth-child(3)"),
-    { x: [-2000, 300] },
-    { duration: 1, delay: 1 }
-  );
-});
-
 
 
 
@@ -160,3 +111,61 @@ scroll(
     offset: ["1 1", "0.1 0.1"]
  }
 )
+
+// media queries
+
+const mediaQuery = window.matchMedia("(max-width:1060px)");
+
+if (mediaQuery.matches) {
+
+  // section 2 mobileview animation
+  inView(".inviewMobile", ({ target }) => {
+    animate(
+      target.querySelectorAll("li:nth-child(1)"),
+      { x: [-1000, 0] },
+      { duration: 1, delay: 0 }
+    );
+  });
+  //animate li 2
+  inView(".inviewMobile", ({ target }) => {
+    animate(
+      target.querySelectorAll("li:nth-child(2)"),
+      { x: [-1000, 0] },
+      { duration: 1, delay: 0.5 }
+    );
+  });
+  //animate li 3
+  inView(".inviewMobile", ({ target }) => {
+    animate(
+      target.querySelectorAll("li:nth-child(3)"),
+      { x: [-1000, 0] },
+      { duration: 1, delay: 1 }
+    );
+  });
+ } else {
+  //animate li 1
+inView(".inview", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(1)"),
+    { x: [-2000, -300] },
+    { duration: 1, delay: 0 }
+  );
+});
+//animate li 2
+inView(".inview", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(2)"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: 0.5 }
+  );
+});
+//animate li 3
+inView(".inview", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(3)"),
+    { x: [-2000, 300] },
+    { duration: 1, delay: 1 }
+  );
+});
+
+ }
