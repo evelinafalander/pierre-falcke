@@ -11,7 +11,7 @@ inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(1)"),
     { x: [-2000, -300] },
-    { duration: 2, delay: 0.5 }
+    { duration: 1, delay: 0 }
   );
 });
 //animate li 2
@@ -19,7 +19,7 @@ inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(2)"),
     { x: [-2000, 0] },
-    { duration: 2, delay: 1 }
+    { duration: 1, delay: 0.5 }
   );
 });
 //animate li 3
@@ -27,7 +27,7 @@ inView(".inview", ({ target }) => {
   animate(
     target.querySelectorAll("li:nth-child(3)"),
     { x: [-2000, 300] },
-    { duration: 2, delay: 1.5 }
+    { duration: 1, delay: 1 }
   );
 });
 //section 3
