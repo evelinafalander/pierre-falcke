@@ -30,6 +30,35 @@ inView(".inview", ({ target }) => {
     { duration: 1, delay: 1 }
   );
 });
+// section 2 mobileview animation
+inView(".inviewMobile", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(1)"),
+    { x: [-2000, 300] },
+    { duration: 1, delay: 0 }
+  );
+});
+//animate li 2
+inView(".inviewMobile", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(2)"),
+    { x: [-2000, 300] },
+    { duration: 1, delay: 0.5 }
+  );
+});
+//animate li 3
+inView(".inviewMobile", ({ target }) => {
+  animate(
+    target.querySelectorAll("li:nth-child(3)"),
+    { x: [-2000, 300] },
+    { duration: 1, delay: 1 }
+  );
+});
+
+
+
+
+
 //section 3
 
 animate(".myScale" ,
